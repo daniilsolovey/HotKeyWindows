@@ -25,22 +25,22 @@ return
     send {right}
 return 
 
-# Alt+ o = PgDN
+# Alt+ Shift + o = PgDN
 <!+o::
     send {PgDn}
 return 
 
-# Alt+ i = PgUp
+# Alt+ Shift + i = PgUp
 <!+i::
     send {PgUp}
 return 
 
-# Alt+ p = End
+# Alt+ Shift + p = End
 <!+p:: 
   send {End}
 return 
 
-# Alt+ u = Home
+# Alt+ Shift + u = Home
 <!+u::
   send {Home}
 return
