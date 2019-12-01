@@ -1,0 +1,72 @@
+SendMode Input
+SetWorkingDir %A_ScriptDir%
+
+#Capslock - change language
+CapsLock::Send, {Ctrl Down}{Shift Down}{Shift Up}{Ctrl Up}
+return
+
+# Alt+ k = up
+<!k::
+    send {up}
+return 
+
+# Alt+ j = down
+<!j::
+    send {down}
+return 
+
+# Alt+ h = left
+<!h::
+    send {left}
+return 
+
+# Alt+ l = right
+<!l::
+    send {right}
+return 
+
+# Alt+ o = PgDN
+<!+o::
+    send {PgDn}
+return 
+
+# Alt+ i = PgUp
+<!+i::
+    send {PgUp}
+return 
+
+# Alt+ p = End
+<!+p:: 
+  send {End}
+return 
+
+# Alt+ u = Home
+<!+u::
+  send {Home}
+return
+
+
+# Alt+ [ = BackSpace
+<![::
+    send {BackSpace}
+return 
+
+# Alt+ ] = Del
+<!]::
+    send {Del}
+return 
+
+# Alt+ m = Enter
+<!m::
+    send {enter}
+return 
+
+#LAlt:: ; switch to next desktop with Windows key + Left Alt key
+  KeyWait LAlt
+  SendInput #^{Right}
+  Return
+
+#LCtrl:: ; switch to previous desktop with Windows key + Left CTRL key
+  KeyWait LCtrl
+  SendInput #^{Left}
+  Return
